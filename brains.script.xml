@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rickGame xmlns:props="pyf.props">
+        <attr>
+                <name>Braaiinnnssss!!!</name>
+                <author>Zack Raver</author>
+                <version>1.0</version>
+                <description>You awaken to blinding fluorescent lights. You smell rubbing alcohol and disease. You are lying slumped on an operating table.The silence is penetrating and uneasing.</description>
+                <!--intro>"You awaken to blinding fluorescent lights. You smell rubbing alcohol and disease. You are lying on an operating table.The silence is penetrating and uneasing."</intro-->
+        </attr>
+
+<!--Rick's Game Rooms-->                
+        <DocOffice name="The doctor's office, Start room, room, Hospital bed room, i6, I6">
+                <ldesc>Sitting up, you can see that you are in a simple doctors office. 
+                        The walls are blank except for the words: ITs All FUcKED... carved across the wall near a window to the east. There are cabinets on the north wall. 
+                        There is a door to the West. From your position you notice a key has been slid beneath the door.
+                </ldesc> 
+                
+                <exits>
+                        <west><DocHallOne /></west>
+                        <east>You can see the ocean in the distance. Unfortunately, you'll have to find another way out. Even if there werent bars on these windows it would be a looong drop.</east>
+                </exits>
+                
+                <Rick name="yourself, Rick"> 
+                        <ldesc>You are wearing a hospital gown, though you feel fine.</ldesc>
+                        <HosGown name="Hospital gown, gown, scrubs">
+                            <ldesc>Sterile and uncomfortable. It also seems to be too small... Maybe I can find some better clothes.</ldesc>
+                                <props:Mobile />
+                                <props:Wearable>
+                                        <attr>
+                                                <worn type="bool">True</worn>
+                                        </attr>
+                                </props:Wearable>                
+                        </HosGown>
+                </Rick>
+                
+                <DocKey name="Doctor's key, doc key, key one, key 1, key, door key">
+                        <ldesc>Seems to be the key to the office you are in.</ldesc>
+                        <props:Mobile />
+                        
+                </DocKey>
+                
+                <DocCabinet name="Doctor's cabinet, cabinet, cubby, cabinets">
+                        <ldesc>The cabinets seemed to be locked except for one cubby.</ldesc>
+                        <props:Container />
+                </DocCabinet>
+                
+        </DocOffice>
+<!--Brandon's Rooms-->
+<!--Steve's Rooms-->
+<!--Zack's Rooms-->
+<!--Common Rooms-->                
+        <DocHallOne name="Dead end hallway, hallway one, end of hallway, hall, h6, H6">
+                <ldesc>Stifling a scream, you quickly realize what your room vandal meant by fucked. The hallway in which you are standing is caked 
+                        in blood and bile and the stench is making your head spin. You need to get the fuck out of here. There are double doors to 
+                        the north and the hallway continues around the corner to the south.
+                </ldesc>
+                <exits>
+                        <north>After a shove you realize these doors must be barricaded from the other side. You won't be escaping this way.</north>
+                        <south><NurseStation /></south>
+                </exits>
+        </DocHallOne>
+        
+        <NurseStation name="Hosital nurse's station, nurse's station, nurses station, hallway two, h7, H7">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><DocHallOne /></north>
+                        <west>This window is barred too. You can hear faint screams coming from the elementary school beyond the hospital grounds.</west>
+                        <east><DocStairwell /></east>
+                </exits>
+        </NurseStation>
+        
+        <DocStairwell name="Hopsital stairwell, stairs, stairwell, hopsital stairs, i7, I7">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><NurseStation /></west>
+                        <east><EROne /></east>
+                        <south><EmergencyStreetExit /></south>  <!--If walk through here alarm sound and dies, ENDING*****************************-->
+                </exits>
+        </DocStairwell>
+        
+        <EROne name="ER exam rooms, emergency exam rooms, er one, j7, J7">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north>These exam room doors are all shut and locked from the outside. Is that shuffling on the other side? Better find a way out.</north>
+                        <west><DocStairwell /></west>
+                        <east><ERWaitingRoom /></east>
+                </exits>
+        </EROne>
+        
+        <EmergencyStreetExit name="Hospital emergency entrance, emergency exit, hospital exit two, i8, I8">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><DocStairwell /></north>
+                        
+                </exits>
+        </EmergencyStreetExit>
+        
+        <ERWaitingRoom name="ER waiting rooms, waiting room, emergency waiting room, k7, K7">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><HospitalParkingLot /></north>
+                        <west><ERWaitingRoom /></west>
+                </exits>
+        </ERWaitingRoom>
+        
+        <HospitalParkingLot name="Hospital parking lot, parking lot, er parking lot, k6, K6">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <south><ERWaitingRoom /></south>
+                        <north>You won't be able to fit through the drive-through window, the entrance is beyond the ambulance barricade</north>
+                        <west><HospAmbulance /></west>
+                        <east><MainStreetSix /></east>
+                </exits>
+        </HospitalParkingLot>
+        
+        <HospAmbulance name="Ambulance blockade:Hospital side, ambulance barricade, ambulance, j6, J6">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <east><HospitalParkingLot /></east>
+                        <north><JibsAmbulance /></north>
+                        <west>This door is jammed against the adjacent car, gotta go out the back or driver's side.</west>
+                </exits>
+        </HospAmbulance>
+        
+        <MainStreetSix name="Main street and hospital lot entrance, main street six, l6, L6">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><HospitalParkingLot /></west>
+                        <north><MainStreetFive /></north>
+                        <south><MainStreetSeven /></south>
+                        <east>The fence is too high to climb, plus that rollercoaster doesn't look to safe to hang around. Better find another way.</east>
+                </exits>
+        </MainStreetSix>
+        
+        <JibsAmbulance name="Ambulance blockade:Jibs side, j5, J5">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north>The front window is busted but there is too much broken glass to climb through. Should just use a door.<north>
+                        <east><Jibs /></east>
+                        <west><PharmacyParkingLot /></west> <!--SHOULD BE BLOCKED OR LOCKED OR SOMETHING*************************************-->
+                        <south><HospAmbulance /></south>
+                </exits>
+        </JibsAmbulance>
+        
+        <Jibs name="Jack in the box, restaraunt, Jibs, k5, K5">
+                <ldesc>TBD
+                        
+                </desc>
+                <exits>
+                        <west><JibsAmbulance /></west>
+                        <north><JibsParkingLotExit /></north>
+                        <south>Peering through the drive-through window you see the hospital lot is filling up with undead. Definently not going back there.</south>
+                </exits>
+        </Jibs>
+        
+        <PharmacyParkingLot name="Pharmacy parking lot, pharmacy lot, i5, I5">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <east><JibsAmbulance /></east>
+                        <west><Pharmacy /></west>
+                        <north><GrocerParkingLot /></north>
+                </exits>
+        </PharmacyParkingLot>
+        
+        <JibsParkingLotExit name="Parking lot exit, jibs lot exit, k4, K4">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <
+                </exits>
+        </JibsParkingLotExit>
+        
+
+        
+</rickGame>
+<!--brandonGame xmlns:props="pyf.props">
+</brandonGame>
+<steveGame xmlns:props="pyf.props">
+</steveGame>
+<zackGame xmlns:props="pyf.props">
+</zackGame-->
