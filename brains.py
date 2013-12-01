@@ -69,7 +69,7 @@ class GrocerParkingLot(items.Room):
 class GrocerAmbulance(items.Room):
     pass
     
-class PharmacySalesFloor(items.Room):
+class PharmacyMain(items.Room):
     pass
     
 class PharmacyBehindCounter(items.Room):
@@ -81,7 +81,7 @@ class GrocerEntrance(items.Room):
 class ProduceSection(items.Room):
     pass
     
-class TwinkiesSection(items.Roon):
+class TwinkiesSection(items.Room):
     pass
 
 class Butchery(items.Room):
@@ -197,18 +197,254 @@ class AlleyFive(items.Room):
     pass
 
 ########################### Boardwalk Classes ##################################
+class BWParkingLotOne(items.Room):
+    pass
+    
+class BWParkingLotTwo(items.Room):
+    pass
+    
+class BWElectricBox(items.Room):
+    pass
+    
+class BWShopsTwo(items.Room):
+    pass
+    
+class BWShopsThree(items.Room):
+    pass
+    
+class BWShopsFour(items.Room):
+    pass
+    
+class HauntedHouseGame(items.Room):
+    pass
+    
+class CarnyGames(items.Room):
+    pass
+    
+class RollerCoasterControls(items.Room):
+    pass
+    
+class RollerCoaster(items.Room):
+    pass
+    
+class FerrisWheelControls(items.Room):
+    pass
+    
+class FerrisWheel(items.Room):
+    pass
+    
+class BWOne(items.Room):
+    pass
+    
+class BWTwo(items.Room):
+    pass
+    
+class BWThree(items.Room):
+    pass
+    
+class BWFour(items.Room):
+    pass
+    
+class BWEntrance(items.Room):
+    pass
+    
+class ClownRoom(items.Room):        ########### ENDING POSSIBILITY #################
+    pass
 
 ########################### Zoo Classes ########################################
+class ZooParkingLotOne(items.Room):
+    pass
+
+class ZooParkingLotTwo(items.Room):
+    pass
+    
+class ZooTicketBooths(items.Room):
+    pass
+    
+class ZooEntrance(items.Room):
+    pass
+    
+class ZooFountain(items.Room):
+    pass
+
+class ZooPenguins(items.Room):
+    pass
+    
+class ZooAquariumEntrance(items.Room):
+    pass
+    
+class ZooAquariumSharks(items.Room):
+    pass
+    
+class ZooAnimalsOne(items.Room):
+    pass
+    
+class ZooAnimalsTwo(items.Room):
+    pass
+    
+class ZooAnimalThree(items.Room):
+    pass
+    
+class ZooSecret(items.Room):
+    pass
 
 ################################## Mansion/Houses Classes ######################
+class HouseFourMain(items.Room):
+    pass
+    
+class HouseFourBY(items.Room):
+    pass
+    
+class HouseThreeGar(items.Room):
+    pass
+    
+class HouseThreeMain(items.Room):
+    pass
+    
+class HouseThreeBYMain(items.Room):
+    pass
+    
+class HouseThreeBYPool(items.Room):
+    pass
+    
+class HouseTwoGar(items.Room):
+    pass
+    
+class HouseTwoMain(items.Room):
+    pass
+    
+class HouseTwoAttic(items.Room):
+    pass
+    
+class HouseTwoBYMain(items.Room):
+    pass
+    
+class HouseTwoBYPool(items.Room):
+    pass
+    
+class HouseTwoBYTrashFence(items.Room):
+    pass
+    
+class HouseOneGar(items.Room):
+    pass
+    
+class HouseOneMain(items.Room):
+    pass
+    
+class HouseOneBY(items.Room):
+    pass
+    
+class ManDW(items.Room):
+    pass
+    
+class ManEntrance(items.Room):
+    pass
+    
+class ManGar(items.Room):
+    pass
+    
+class ManRV(items.Room):
+    pass
+    
+class ManFFBedRoom(items.Room):
+    pass
+    
+class ManFFKitchen(items.Room):
+    pass
+    
+class ManArmory(items.Room):
+    pass
+    
+class ManSFBath(items.Room):
+    pass
+    
+class ManSFLibrary(items.Room):
+    pass
+    
+class ManSFBedroom(items.Room):
+    pass
+    
+class ManSFTorture(items.Room):
+    pass
 
 ###############################Elementary School Classes #######################
+class SchoolParkingLot(items.Room):
+    pass
+    
+class SchoolBus(items.Room):
+    pass
+    
+class KinderClass(items.Room):
+    pass
+    
+class GradeClass(items.Room):
+    pass
+    
+class LunchArea(items.Room):
+    pass
+    
+class Playground(items.Room):
+    pass
+    
+class AuditoriumMain(items.Room):
+    pass
+    
+class AudStorage(items.Room):
+    pass
 
 ############################# Forrest/Graveyard Classes ########################
+class ForrestOne(items.Room):     ##Leftwise
+    pass
+    
+class ForrestTwo(items.Room):
+    pass
+
+class ForrestThree(items.Room):
+    pass
+    
+class GraveyardOne(items.Room):
+    pass
+    
+class GraveyardTwo(items.Room):
+    pass
+    
+class Sinkhole(items.Room):
+    pass
 
 ############################# Hills/ Lake/ Cabin Classes #######################
+class WaterfrontHills(items.Room):
+    pass
+
+class HillsTwo(items.Room):
+    pass
+    
+class HillsThree(items.Room):
+    pass
+    
+class HillsFour(items.Room):
+    pass
+    
+class HillsFive(items.Room):
+    pass
+    
+class HillsSix(items.Room):
+    pass
+    
+class HillsSeven(items.Room):
+    pass
+    
+class LakeInlet(items.Room):
+    pass
 
 ############################# Construction Site/ Field Classes #################
+class ForemansOffice(items.Room):
+    pass
+    
+class ConstructionSiteOne(items.Room):
+    pass
+    
+class ConstructionSiteTwo(items.Room):
+    pass
 
 ################################ Actors ########################################
 class Rick(items.Actor):

@@ -153,7 +153,7 @@
                         
                 </ldesc>
                 <exits>
-                        <north>The front window is busted but there is too much broken glass to climb through. Should just use a door.<north>
+                        <north>The front window is busted but there is too much broken glass to climb through. Should just use a door.</north>
                         <east><Jibs /></east>
                         <west><PharmacyParkingLot /></west> <!--SHOULD BE BLOCKED OR LOCKED OR SOMETHING*************************************-->
                         <south><HospAmbulance /></south>
@@ -163,7 +163,7 @@
         <Jibs name="Jack in the box, restaraunt, Jibs, k5, K5">
                 <ldesc>TBD
                         
-                </desc>
+                </ldesc>
                 <exits>
                         <west><JibsAmbulance /></west>
                         <north><JibsParkingLotExit /></north>
@@ -177,7 +177,7 @@
                 </ldesc>
                 <exits>
                         <east><JibsAmbulance /></east>
-                        <west><Pharmacy /></west>
+                        <west><PharmacyMain /></west>
                         <north><GrocerParkingLot /></north>
                 </exits>
         </PharmacyParkingLot>
@@ -187,7 +187,7 @@
                         
                 </ldesc>
                 <exits>
-                        <
+                        
                 </exits>
         </JibsParkingLotExit>
         
