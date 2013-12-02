@@ -81,7 +81,7 @@ class GrocerEntrance(items.Room):
 class ProduceSection(items.Room):
     pass
     
-class TwinkiesSection(items.Room):
+class TwinkySection(items.Room):
     pass
 
 class Butchery(items.Room):
@@ -392,14 +392,23 @@ class AuditoriumMain(items.Room):
 class AudStorage(items.Room):
     pass
 
-############################# Forrest/Graveyard Classes ########################
-class ForrestOne(items.Room):     ##Leftwise
+############################# Forest/Graveyard/Swamp Classes ###################
+class ForestOne(items.Room):     ##Leftwise
     pass
     
-class ForrestTwo(items.Room):
+class ForestTwo(items.Room):
     pass
 
-class ForrestThree(items.Room):
+class ForestThree(items.Room):
+    pass
+
+class SwampOne(items.Room):
+    pass
+    
+class SwampTwo(items.Room):
+    pass
+    
+class SwampThree(items.Room):
     pass
     
 class GraveyardOne(items.Room):
@@ -436,7 +445,23 @@ class HillsSeven(items.Room):
 class LakeInlet(items.Room):
     pass
 
-############################# Construction Site/ Field Classes #################
+############################# Romero St./Construction Site/ Field Classes #############quit
+####
+class RomeroStOne(items.Room):
+    pass
+    
+class RomeroStTwo(items.Room):
+    pass
+    
+class RomeroStThree(items.Room):
+    pass
+    
+class RomeroStFour(items.Room):
+    pass
+
+class RomeroStFive(items.Room):
+    pass
+    
 class ForemansOffice(items.Room):
     pass
     

@@ -8,7 +8,9 @@
                 <!--intro>"You awaken to blinding fluorescent lights. You smell rubbing alcohol and disease. You are lying on an operating table.The silence is penetrating and uneasing."</intro-->
         </attr>
 
-<!--Rick's Game Rooms-->                
+<!--Rick's Game Rooms--> 
+<!--################################# Hospital Grounds Classes #####################-->               
+        
         <DocOffice name="The doctor's office, Start room, room, Hospital bed room, i6, I6">
                 <ldesc>Sitting up, you can see that you are in a simple doctors office. 
                         The walls are blank except for the words: ITs All FUcKED... carved across the wall near a window to the east. There are cabinets on the north wall. 
@@ -45,10 +47,7 @@
                 </DocCabinet>
                 
         </DocOffice>
-<!--Brandon's Rooms-->
-<!--Steve's Rooms-->
-<!--Zack's Rooms-->
-<!--Common Rooms-->                
+                
         <DocHallOne name="Dead end hallway, hallway one, end of hallway, hall, h6, H6">
                 <ldesc>Stifling a scream, you quickly realize what your room vandal meant by fucked. The hallway in which you are standing is caked 
                         in blood and bile and the stench is making your head spin. You need to get the fuck out of here. There are double doors to 
@@ -93,16 +92,6 @@
                 </exits>
         </EROne>
         
-        <EmergencyStreetExit name="Hospital emergency entrance, emergency exit, hospital exit two, i8, I8">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <north><DocStairwell /></north>
-                        
-                </exits>
-        </EmergencyStreetExit>
-        
         <ERWaitingRoom name="ER waiting rooms, waiting room, emergency waiting room, k7, K7">
                 <ldesc>TBD
                         
@@ -135,19 +124,6 @@
                         <west>This door is jammed against the adjacent car, gotta go out the back or driver's side.</west>
                 </exits>
         </HospAmbulance>
-        
-        <MainStreetSix name="Main street and hospital lot entrance, main street six, l6, L6">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><HospitalParkingLot /></west>
-                        <north><MainStreetFive /></north>
-                        <south><MainStreetSeven /></south>
-                        <east>The fence is too high to climb, plus that rollercoaster doesn't look to safe to hang around. Better find another way.</east>
-                </exits>
-        </MainStreetSix>
-        
         <JibsAmbulance name="Ambulance blockade:Jibs side, j5, J5">
                 <ldesc>TBD
                         
@@ -187,12 +163,418 @@
                         
                 </ldesc>
                 <exits>
-                        
+                        <south><Jibs /></south>
+                        <east><MainStreetFour /></east>
+                        <west>The doors to this ambulance have been welded shut...can't go this way</west>
                 </exits>
         </JibsParkingLotExit>
         
-
+        <GrocerParkingLot name="Grocery parking lot, grocer lot, i4, I4">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <south><PharmacyParkingLot /></south>
+                        <north><GrocerEntrance /></north>
+                        <east>The doors to this ambulance have been welded shut...can't go this way</east>
+                </exits>
+        </GrocerParkingLot>
         
+        <PharmacyMain name="Pharmacy entrance, pharmacy main, h5, H5">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><PharmacyBehindCounter /></north>
+                        <east><PharmacyParkingLot /></east>
+                </exits>
+        </PharmacyMain>
+        
+        <PharmacyBehindCounter name="Behind the pharmacy counter, pharmacy counter, behind counter, h4, H4">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <south><PharmacyMain /></south>
+                        <west>Through the window you can see the Elementary School's playground across the alley. Things over there are too quiet now. Better avoid it.</west>
+                </exits>
+        </PharmacyBehindCounter>
+        
+        <GrocerEntrance name="Grocery entrance, the grocery, i3, I3">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <south><GrocerParkingLot /></south>
+                        <west><ProduceSection /></west>
+                        <east><TwinkySection /></east>
+                </exits>
+        </GrocerEntrance>
+        
+        <ProduceSection name="The produce section, produce, h3, H3">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <east><GrocerEntrance /></east>
+                </exits>
+        </ProduceSection>
+        
+        <TwinkySection name="The snack section, snacks, twinkies, j3, J3">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north>The grocery's front door is barricaded from the inside. Maybe there was...or is someone in here...with me.</north>
+                        <west><GrocerEntrance /></west>
+                        <east><Butchery /></east>
+                </exits>
+        </TwinkySection>
+        
+        <Butchery name="The butchery, butcher, carniceria, k3, K3">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><TwinkySection /></west>
+                        <east>The emergency exit is also barricaded. It's pretty creepy in here, better hurry and retrace my steps out.</east>
+                </exits>
+        </Butchery>
+        
+<!--######################### MAIN STREET CLASSES ##################################--> 
+
+        <MainStreetOne name="Main street exit, main street one, l1, L1">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north>Beyond the highway barricade you can see that downtown is in flames and the streets are thick with the Undead. Your future doesn't lay that way.</north>
+                        <west><HillsSeven /></west>
+                        <south><MainStreetTwo /></south>
+                </exits>
+        </MainStreetOne>
+
+        <MainStreetTwo name="Main street and 1st avenue, main street two, l2, L2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetOne /></north>
+                        <west><FirstAveEight /></west>
+                        <east><BWParkingLotOne /></east>
+                        <south><MainStreetThree /></south>
+                </exits>
+        </MainStreetTwo>
+        
+        <MainStreetThree name="Main street at Grocery, main street three, l3, L3">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetTwo /></north>
+                        <west>You charge the door but it doesn't budge. Better keep moving.</west>
+                        <south><MainStreetFour /></south>
+                </exits>
+        </MainStreetThree>
+        
+        <MainStreetFour name="Main street and grocery lot entrance, main street one, l4, L4">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetThree /></north>
+                        <west><JibsParkingLotExit /></west>
+                        <south><MainStreetFive /></south>
+                </exits>
+        </MainStreetFour>
+        
+        <MainStreetFive name="Main street at Jack in the Box, main street five, l5, L5">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetFour /></north>
+                        <south>The wreckage prevents you from continuing south. There's probably a way around.</south>
+                </exits>
+        </MainStreetFive>
+                
+        <MainStreetSix name="Main street and hospital lot entrance, main street six, l6, L6">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><HospitalParkingLot /></west>
+                        <north>Part of the rollercoaster wreck has blocked access to the rest of Main Street. Maybe there is a way around.</north>
+                        <south><MainStreetSeven /></south>
+                        <east>The fence is too high to climb, plus that rollercoaster wreckage doesn't look to safe to hang around. Better find another way.</east>
+                </exits>
+        </MainStreetSix>
+        
+        <MainStreetSeven name="Main street at Hospital, main street seven, l7, L7">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetSix /></north>
+                        <south><MainStreetEight /></south>
+                </exits>
+        </MainStreetSeven>
+        
+        <MainStreetEight name="Main street and 2nd avenue, main street eight, l8, L8">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetSeven /></north>
+                        <west><SecAveEight /></west>
+                        <south><MainStreetNine /></south>
+                </exits>
+        </MainStreetEight>
+        
+        <MainStreetNine name="Main street and Zoo entrance, main street nine, l9, L9">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetEight /></north>
+                        <east><ZooParkingLotOne /></east>
+                        <south><MainStreetTen /></south>
+                </exits>
+        </MainStreetOne>
+        
+        <MainStreetTen name="Main street end, main street ten, l10, L10">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetNine /></north>
+                        <west><HouseFourBY /></west>
+                        <south><CountryRoadOne /></south>
+                </exits>
+        </MainStreetTen>
+        
+        <CountryRoadOne name="Dirt road, country road one, l11, L11">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><MainStreetTen /></north>
+                        <west>That ditch looks pretty unforgiving.You should avoid it.</west>
+                        <south><CountryRoadTwo /></south>
+                        <east><SwampOne /></east>
+                </exits>
+        </CountryRoadOne>
+        
+        <CountryRoadTwo name="Dirt road in deep woods, country road two, l12, L12">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><CountryRoadOne /></north>
+                        <south>The forest is too dense to continue south.</south>
+                        <west>The forest is too dense to continue west.</west>
+                        <east><CountryRoadThree /><east>
+                </exits>
+        </CountryRoadTwo>
+        
+        <CountryRoadThree name="Muddy path in deep woods, country road three, m12, M12">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><CountryRoadTwo /></west>
+                        <north>The mud is too thick to walk through, better stay on the path.</north>
+                        <south><MilitarySafeZone /></south>
+                </exits>
+        </CountryRoadThree>
+        
+        <MilitarySafeZone name="Military safe zone, military camp, m13, M13">  <!--POSSIBLE ENDING HERE************************************************************-->
+                <ldesc>You stumble through the trees out into a clearing and are shocked by the bright sun. You are dizzy for a moment but after your eyes 
+                        adjust a smile bursts onto your face. The clearing is filled with soldiers with huge guns and they are shepherding civilians to various 
+                        relief tents. You are approached by one of the soldiers.
+                </ldesc>
+                <exits>
+                        <north><CountryRoadThree /></north>
+                </exits>
+        </MilitarySafeZone>
+        
+<!--############################ 1st Avenue Classes ################################-->
+
+        <FirstAveOne name="1st avenue and romero street, first avenue one, e2, E2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><LakeInlet /></west>
+                        <north>The beautiful freezing waters of Red Lake prohibit you from moving north...without a boat that is.</north>
+                        <south><RomeroStOne /></south>
+                        <east><FirstAveTwo /></east>
+                </exits>
+        </FirstAveOne>
+        
+        <FirstAveTwo name="1st avenue outside elementary school, first avenue two, f2, F2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><FirstAveOne /></west>
+                        <north>The beautiful freezing waters of Red Lake prohibit you from moving north...without a boat that is.</north>
+                        <east><FirstAveThree /></east>
+                </exits>
+        </FirstAveTwo>
+        
+        <FirstAveThree name="1st avenue and hillside shack, first avenue three, g2, G2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><FirstAveTwo /></west>
+                        <north><HillsTwo /></north>
+                        <east><FirstAveFour /></east>
+                </exits>
+        </FirstAveThree>
+        
+        <FirstAveFour name="1st avenue and alley, first avenue four, al2, AL2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><FirstAveThree /></west>
+                        <east><FirstAveFive /></east>
+                        <north>The face of the mountains are too sheer for you to climb here.</north>
+                        <south><AlleyOne /></south>
+                </exits>
+        </FirstAveFour>
+        
+        <FirstAveFive name="1st avenue, first avenue five, h2, H2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><FirstAveFour /></west>
+                        <east><FirstAveSix /></east>
+                        <north>The face of the mountains are too sheer for you to climb here.</north>
+                </exits>
+        </FirstAveFive>
+        
+        <FirstAveSix name="1st avenue, first avenue six, i2, I2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><FirstAveFive /></west>
+                        <east><FirstAveSeven /></east>
+                        <north>The face of the mountains are too sheer for you to climb here.</north>
+                </exits>
+        </FirstAveSix>
+        
+        <FirstAveSeven name="1st avenue outside Grocer entrance, first avenue seven, j2, J2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <west><FirstAveSix /></west>
+                        <east><FirstAveEight /></east>
+                        <north>The face of the mountains are too sheer for you to climb here.</north>
+                        <south>The door to the grocery store seems to be barricaded from the inside. There might be another way in.</south>
+                </exits>
+        </FirstAveSeven>
+        
+        <FirstAveEight name="1st avenue at Main street, first avenue eight, k2, K2">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <east><FirstAveSeven /></east>
+                        <west><MainStreetTwo /></west>
+                        <north>The face of the mountains are too sheer for you to climb here.</north>
+                </exits>
+        </FirstAveEight>
+<!--########################### 2nd Avenue Classes #################################-->
+
+        <SecAveOne name="2nd avenue and Romero street, second avenue one, e8, E8">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><RomeroStFive /></north>
+                        <west><ManDW /></west>
+                        <east><SecAveTwo /></east>
+                        <south> The blackberry bushes are overgrown and have many pitiful zombies caught in their web. Plants win this time.</south>
+                </exits>
+        </SecAveOne>
+        
+        <SecAveTwo name="2nd avenue, second avenue two, f8, F8">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <west><SecAveOne /></west>
+                        <east><SecAveThree /></east>
+                </exits>
+        </SecAveTwo>
+        
+        <SecAveThree name="2nd avenue, second avenue three, g8, G8">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                </exits>
+        </SecAveThree>
+        
+        <SecAveFour name="">
+                <ldesc>
+                
+                </ldesc>
+                <exits>
+                </exits>
+        </SecAveFour>
+        
+        <SecAveFive name="">
+                <ldesc>
+                
+                </ldesc>
+                <exits>
+                </exits>
+        </SecAveFive>
+        
+        <EmergencyStreetExit name="Hospital emergency entrance, emergency exit, 2nd street six, hospital exit two, i8, I8">
+                <ldesc>TBD
+                        
+                </ldesc>
+                <exits>
+                        <north><DocStairwell /></north>
+                        
+                </exits>
+        </EmergencyStreetExit>
+        
+        <SecAveSeven name="">
+                <ldesc>
+                
+                </ldesc>
+                <exits>
+                </exits>
+        </SecAveSeven>
+        
+        <SecAveEight name="">
+                <ldesc>
+                
+                </ldesc>
+                <exits>
+                </exits>
+        </SecAveEight>
+        
+<!--########################### Alley Classes ######################################-->
+<!--########################### Boardwalk Classes ##################################-->
+<!--########################### Zoo Classes ########################################-->
+<!--################################## Mansion/Houses Classes ######################-->
+<!--###############################Elementary School Classes #######################-->
+<!--############################# Forest/Graveyard/Swamp Classes ###################--> 
+<!--############################# Hills/ Lake/ Cabin Classes #######################-->
+<!--############################# Construction Site/ Field Classes #################-->  
+<!--Brandon's Rooms-->
+<!--Steve's Rooms-->
+<!--Zack's Rooms-->             
 </rickGame>
 <!--brandonGame xmlns:props="pyf.props">
 </brandonGame>
