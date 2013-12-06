@@ -7,17 +7,17 @@ from pyf import items, game, interface, props
 
 ##################################### Playable Character #######################
 whichGame = raw_input("Which character would you like to play as: Rick Grimes(Sweet), Brandon Conchobhair(Mild), Steve Butler(Medium), Zack Raver(Hotasfuck)?\n")
-if whichGame=="Rick" or "Rick Grimes" or "rick" or "sweet" or "easy":
+if whichGame[0]== "R" or "r" or "E" or "e" or WhichGame == "sweet" or "Sweet":
     class rickGame(game.Game):
         pass
-elif whichGame=="Brandon" or "Brandon Conchobhair" or "brandon" or "mild" or "normal" or "concho":
-    class brandonGame(game.brandonGame):
+elif whichGame[0]=="Z" or "z" or "h" or "H" or "L":
+    class zackGame(game.zackGame):
         pass
-elif whichGame=="Steve" or "Steve Butler" or "steve" or "medium" or "hard":
+elif whichGame[1]=="t" or "u" or whichGame == "medium" or "hard": 
     class steveGame(game.steveGame):
         pass
-elif whichGame=="Zack" or "Zack Raver" or "zack" or "hot" or "hotasfuck" or "legendary":
-    class zackGame(game.zackGame):
+elif whichGame[1]== "r" or "o"  or whichGame== "mild":
+    class brandonGame(game.brandonGame):
         pass
 else:
     print "Not a valid character, please restart the game and try again!"
