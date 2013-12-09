@@ -6,7 +6,9 @@ from pyf import items, game, interface, props
 
 
 ##################################### Playable Character #######################
-whichGame = raw_input("Which character would you like to play as: Rick Grimes(Sweet), Brandon Conchobhair(Mild), Steve Butler(Medium), Zack Raver(Hotasfuck)?\n")
+class rickGame(game.Game):
+    pass
+'''whichGame = raw_input("Which character would you like to play as: Rick Grimes(Sweet), Brandon Conchobhair(Mild), Steve Butler(Medium), Zack Raver(Hotasfuck)?\n")
 if whichGame[0]== "R" or "r" or "E" or "e" or WhichGame == "sweet" or "Sweet":
     class rickGame(game.Game):
         pass
@@ -21,10 +23,10 @@ elif whichGame[1]== "r" or "o"  or whichGame== "mild":
         pass
 else:
     print "Not a valid character, please restart the game and try again!"
-    sys.exit(0)
+    sys.exit(0)'''
 
-##class Game(game.Game):
-  ##  pass
+class Game(game.Game):
+    pass
         
 ################################# Hospital Grounds Classes #####################
 class DocOffice(items.Room):
@@ -155,7 +157,7 @@ class FirstAveSeven(items.Room):
 class FirstAveEight(items.Room):
     pass
 
-########################### 2nd Avenue Classes #################################
+'''########################### 2nd Avenue Classes #################################
 class SecAveOne(items.Room):
     pass
     
@@ -194,7 +196,7 @@ class AlleyFour(items.Room):
     pass
     
 class AlleyFive(items.Room):
-    pass
+    pass'''
 
 ########################### Boardwalk Classes ##################################
 class BWParkingLotOne(items.Room):
@@ -251,7 +253,7 @@ class BWEntrance(items.Room):
 class ClownRoom(items.Room):        ########### ENDING POSSIBILITY #################
     pass
 
-########################### Zoo Classes ########################################
+'''########################### Zoo Classes ########################################
 class ZooParkingLotOne(items.Room):
     pass
 
@@ -390,17 +392,17 @@ class AuditoriumMain(items.Room):
     pass
     
 class AudStorage(items.Room):
-    pass
+    pass'''
 
 ############################# Forest/Graveyard/Swamp Classes ###################
-class ForestOne(items.Room):     ##Leftwise
+'''class ForestOne(items.Room):     ##Leftwise
     pass
     
 class ForestTwo(items.Room):
     pass
 
 class ForestThree(items.Room):
-    pass
+    pass'''
 
 class SwampOne(items.Room):
     pass
@@ -411,14 +413,14 @@ class SwampTwo(items.Room):
 class SwampThree(items.Room):
     pass
     
-class GraveyardOne(items.Room):
+'''class GraveyardOne(items.Room):
     pass
     
 class GraveyardTwo(items.Room):
     pass
     
 class Sinkhole(items.Room):
-    pass
+    pass'''
 
 ############################# Hills/ Lake/ Cabin Classes #######################
 class WaterfrontHills(items.Room):
@@ -442,7 +444,7 @@ class HillsSix(items.Room):
 class HillsSeven(items.Room):
     pass
     
-class LakeInlet(items.Room):
+'''class LakeInlet(items.Room):
     pass
 
 ############################# Romero St./Construction Site/ Field Classes #############quit
@@ -470,7 +472,7 @@ class ConstructionSiteOne(items.Room):
     
 class ConstructionSiteTwo(items.Room):
     pass
-
+'''
 ################################ Actors ########################################
 class Rick(items.Actor):
     pass
@@ -489,13 +491,13 @@ class HosGown(items.Item):
 
 ##################### Create Game and Interface from brains.script.xml #########
 game = game.createFromScript(open('brains.script.xml'), locals())
-if whichGame=="Rick" or "Rick Grimes" or "rick" or "sweet" or "easy":
-    game.actor = Rick.inst
-elif whichGame=="Brandon" or "Brandon Conchobhair" or "brandon" or "mild" or "normal" or "concho":
+##if whichGame=="Rick" or "Rick Grimes" or "rick" or "sweet" or "easy":
+game.actor = Rick.inst
+'''elif whichGame=="Brandon" or "Brandon Conchobhair" or "brandon" or "mild" or "normal" or "concho":
     game.actor = Brandon.inst
 elif whichGame=="Steve" or "Steve Butler" or "steve" or "medium" or "hard":
     game.actor = Steve.inst
 elif whichGame=="Zack" or "Zack Raver" or "zack" or "hot" or "hotasfuck" or "legendary":
-    game.actor = Zack.inst
+    game.actor = Zack.inst'''
 
 interface.runGame(game)
