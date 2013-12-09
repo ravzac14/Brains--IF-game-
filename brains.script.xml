@@ -9,11 +9,11 @@
         </attr>
 
 <!--Rick's Game Rooms--> 
-<!--################################# Hospital Grounds Classes #####################-->               
+<!--################################# Hospital Grounds Classes #####################DONE-->               
         
         <DocOffice name="The doctor's office, Start room, room, Hospital bed room, i6, I6">
                 <ldesc>Sitting up, you can see that you are in a simple doctors office. 
-                        The walls are blank except for the words: ITs All FUcKED... carved across the wall near a window to the east. There are cabinets on the north wall. 
+                        The walls are blank except for the words: ITs All FUcKED eScape If YOu CAN... carved across the wall near a window to the east. There are cabinets on the north wall. 
                         There is a door to the West. From your position you notice a key has been slid beneath the door.
                 </ldesc> 
                 
@@ -60,8 +60,9 @@
         </DocHallOne>
         
         <NurseStation name="Hosital nurse's station, nurse's station, nurses station, hallway two, h7, H7">
-                <ldesc>TBD
-                
+                <ldesc>The nurse's station is in disarray. It looks like everyone left in a hurry most of the stretchers are turned over and the floor is 
+                        covered in tongue depressors. The doorway to the east is labelled, Stairs, with a green exit sign above it. There is a window with sunlight
+                        pouring through it to the west. The doctor's office is to the north.
                 </ldesc>
                 <exits>
                         <north><DocHallOne /></north>
@@ -71,29 +72,31 @@
         </NurseStation>
         
         <DocStairwell name="Hopsital stairwell, stairs, stairwell, hopsital stairs, i7, I7">
-                <ldesc>TBD
-                        
+                <ldesc>The clutter from the hopsital staff's clumsy, panicky flight had spread to the stairway. All the way down the three flights of stairs there were 
+                        ladies shoes abandoned and stiff, lab coats strewn off to either side. On the ground floor there is a door to the east and an emergency exit to the
+                        south. The Nurse's station is back up the stairs to the west.
                 </ldesc>
                 <exits>
                         <west><NurseStation /></west>
                         <east><EROne /></east>
-                        <south><EmergencyStreetExit /></south>  <!--If walk through here alarm sound and dies, ENDING*****************************-->
+                        <south>You push gently on the door and an alarm begins to blare loudly. Your stomache does a flip, you realize you've got to get out of here some other way</south>  <!--If walk through here alarm sound and dies, ENDING*****************************-->
                 </exits>
         </DocStairwell>
         
         <EROne name="ER exam rooms, emergency exam rooms, er one, j7, J7">
-                <ldesc>TBD
-                        
+                <ldesc>You step into a series of exam rooms. There are dozens of closed doors and abandoned stretchers stradled with sheet-covered figures. Upon closer 
+                        inspection you realize the -dead?- bodies have all been securely strapped to their stretchers. The nearest bed has a pale hand hanging over its
+                        side. Its holding something small. The stairwell is back to the west and the double doors to the waiting room is to the east. 
                 </ldesc>
                 <exits>
-                        <north>These exam room doors are all shut and locked from the outside. Is that shuffling on the other side? Better find a way out.</north>
+                        <north>These exam room doors are all shut and locked from the outside. Is that shuffling on the other side? Better keep moving.</north>
                         <west><DocStairwell /></west>
                         <east><ERWaitingRoom /></east>
                 </exits>
         </EROne>
         
         <ERWaitingRoom name="ER waiting rooms, waiting room, emergency waiting room, k7, K7">
-                <ldesc>TBD
+                <ldesc>v
                         
                 </ldesc>
                 <exits>
@@ -241,7 +244,7 @@
                 </exits>
         </Butchery>
         
-<!--######################### MAIN STREET CLASSES ##################################--> 
+<!--######################### MAIN STREET CLASSES ##################################DONE--> 
 
         <MainStreetOne name="Main street exit, main street one, l1, L1">
                 <ldesc>TBD
@@ -260,7 +263,7 @@
                 </ldesc>
                 <exits>
                         <north><MainStreetOne /></north>
-                        <west><FirstAveEight /></west>
+                        <west> <!--FirstAveEight /-->The rest of town isn't ready for you yet..You should stay on the east side.</west>
                         <east><BWParkingLotOne /></east>
                         <south><MainStreetThree /></south>
                 </exits>
@@ -272,7 +275,7 @@
                 </ldesc>
                 <exits>
                         <north><MainStreetTwo /></north>
-                        <west>You charge the door but it doesn't budge. Better keep moving.</west>
+                        <west>You charge the door but it doesn't budge. Better keep moving.</west><!--############################# Forest/Graveyard/Swamp Classes ###################--> 
                         <south><MainStreetFour /></south>
                 </exits>
         </MainStreetThree>
@@ -304,7 +307,7 @@
                 </ldesc>
                 <exits>
                         <west><HospitalParkingLot /></west>
-                        <north>Part of the rollercoaster wreck has blocked access to the rest of Main Street. Maybe there is a way around.</north>
+                        <north>Part of the rollercoaster wreckage has blocked access to the rest of Main Street. Maybe there is a way around.</north>
                         <south><MainStreetSeven /></south>
                         <east>The fence is too high to climb, plus that rollercoaster wreckage doesn't look to safe to hang around. Better find another way.</east>
                 </exits>
@@ -326,7 +329,7 @@
                 </ldesc>
                 <exits>
                         <north><MainStreetSeven /></north>
-                        <west><SecAveEight /></west>
+                        <west>The houses to the west have been burned to the ground and the mansion on the hill beyond them seems to be emitting a sinister orchestral tune. You've got no time for psychos better not head that way!<!--SecAveEight /--></west>
                         <south><MainStreetNine /></south>
                 </exits>
         </MainStreetEight>
@@ -337,10 +340,10 @@
                 </ldesc>
                 <exits>
                         <north><MainStreetEight /></north>
-                        <east><ZooParkingLotOne /></east>
+                        <east><!--ZooParkingLotOne /-->The zoo gates are locked tight...maybe we will see zombie sharks...in the sequel...</east>
                         <south><MainStreetTen /></south>
                 </exits>
-        </MainStreetOne>
+        </MainStreetNine>
         
         <MainStreetTen name="Main street end, main street ten, l10, L10">
                 <ldesc>TBD
@@ -348,7 +351,7 @@
                 </ldesc>
                 <exits>
                         <north><MainStreetNine /></north>
-                        <west><HouseFourBY /></west>
+                        <!--west><HouseFourBY /></west-->
                         <south><CountryRoadOne /></south>
                 </exits>
         </MainStreetTen>
@@ -365,6 +368,17 @@
                 </exits>
         </CountryRoadOne>
         
+        <SwampOne name="Swamp trail, m11, M11">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <west><CountryRoadOne /></west>
+                        <south>The muck is too deep to go that way</south>
+                        <north>The muck is too deep to go that way..and something smells.</north>
+                </exits>
+        </SwampOne>
+        
         <CountryRoadTwo name="Dirt road in deep woods, country road two, l12, L12">
                 <ldesc>TBD
                         
@@ -373,7 +387,7 @@
                         <north><CountryRoadOne /></north>
                         <south>The forest is too dense to continue south.</south>
                         <west>The forest is too dense to continue west.</west>
-                        <east><CountryRoadThree /><east>
+                        <east><CountryRoadThree /></east>
                 </exits>
         </CountryRoadTwo>
         
@@ -398,179 +412,153 @@
                 </exits>
         </MilitarySafeZone>
         
-<!--############################ 1st Avenue Classes ################################-->
-
-        <FirstAveOne name="1st avenue and romero street, first avenue one, e2, E2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><LakeInlet /></west>
-                        <north>The beautiful freezing waters of Red Lake prohibit you from moving north...without a boat that is.</north>
-                        <south><RomeroStOne /></south>
-                        <east><FirstAveTwo /></east>
-                </exits>
-        </FirstAveOne>
-        
-        <FirstAveTwo name="1st avenue outside elementary school, first avenue two, f2, F2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><FirstAveOne /></west>
-                        <north>The beautiful freezing waters of Red Lake prohibit you from moving north...without a boat that is.</north>
-                        <east><FirstAveThree /></east>
-                </exits>
-        </FirstAveTwo>
-        
-        <FirstAveThree name="1st avenue and hillside shack, first avenue three, g2, G2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><FirstAveTwo /></west>
-                        <north><HillsTwo /></north>
-                        <east><FirstAveFour /></east>
-                </exits>
-        </FirstAveThree>
-        
-        <FirstAveFour name="1st avenue and alley, first avenue four, al2, AL2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><FirstAveThree /></west>
-                        <east><FirstAveFive /></east>
-                        <north>The face of the mountains are too sheer for you to climb here.</north>
-                        <south><AlleyOne /></south>
-                </exits>
-        </FirstAveFour>
-        
-        <FirstAveFive name="1st avenue, first avenue five, h2, H2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><FirstAveFour /></west>
-                        <east><FirstAveSix /></east>
-                        <north>The face of the mountains are too sheer for you to climb here.</north>
-                </exits>
-        </FirstAveFive>
-        
-        <FirstAveSix name="1st avenue, first avenue six, i2, I2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><FirstAveFive /></west>
-                        <east><FirstAveSeven /></east>
-                        <north>The face of the mountains are too sheer for you to climb here.</north>
-                </exits>
-        </FirstAveSix>
-        
-        <FirstAveSeven name="1st avenue outside Grocer entrance, first avenue seven, j2, J2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <west><FirstAveSix /></west>
-                        <east><FirstAveEight /></east>
-                        <north>The face of the mountains are too sheer for you to climb here.</north>
-                        <south>The door to the grocery store seems to be barricaded from the inside. There might be another way in.</south>
-                </exits>
-        </FirstAveSeven>
-        
-        <FirstAveEight name="1st avenue at Main street, first avenue eight, k2, K2">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <east><FirstAveSeven /></east>
-                        <west><MainStreetTwo /></west>
-                        <north>The face of the mountains are too sheer for you to climb here.</north>
-                </exits>
-        </FirstAveEight>
-<!--########################### 2nd Avenue Classes #################################-->
-
-        <SecAveOne name="2nd avenue and Romero street, second avenue one, e8, E8">
-                <ldesc>TBD
-                
-                </ldesc>
-                <exits>
-                        <north><RomeroStFive /></north>
-                        <west><ManDW /></west>
-                        <east><SecAveTwo /></east>
-                        <south> The blackberry bushes are overgrown and have many pitiful zombies caught in their web. Plants win this time.</south>
-                </exits>
-        </SecAveOne>
-        
-        <SecAveTwo name="2nd avenue, second avenue two, f8, F8">
-                <ldesc>TBD
-                
-                </ldesc>
-                <exits>
-                        <west><SecAveOne /></west>
-                        <east><SecAveThree /></east>
-                </exits>
-        </SecAveTwo>
-        
-        <SecAveThree name="2nd avenue, second avenue three, g8, G8">
-                <ldesc>TBD
-                
-                </ldesc>
-                <exits>
-                </exits>
-        </SecAveThree>
-        
-        <SecAveFour name="">
-                <ldesc>
-                
-                </ldesc>
-                <exits>
-                </exits>
-        </SecAveFour>
-        
-        <SecAveFive name="">
-                <ldesc>
-                
-                </ldesc>
-                <exits>
-                </exits>
-        </SecAveFive>
-        
-        <EmergencyStreetExit name="Hospital emergency entrance, emergency exit, 2nd street six, hospital exit two, i8, I8">
-                <ldesc>TBD
-                        
-                </ldesc>
-                <exits>
-                        <north><DocStairwell /></north>
-                        
-                </exits>
-        </EmergencyStreetExit>
-        
-        <SecAveSeven name="">
-                <ldesc>
-                
-                </ldesc>
-                <exits>
-                </exits>
-        </SecAveSeven>
-        
-        <SecAveEight name="">
-                <ldesc>
-                
-                </ldesc>
-                <exits>
-                </exits>
-        </SecAveEight>
-        
-<!--########################### Alley Classes ######################################-->
 <!--########################### Boardwalk Classes ##################################-->
+        
+        <BWParkingLotOne name="The carnival parking lot, boardwalk parking lot, m2, M2">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><BWParkingLotTwo /></north>
+                        <west><MainStreetTwo /></west>
+                </exits>
+        </BWParkingLotOne>
+        
+        <BWParkingLotTwo name="Carnival ticket booths, boardwalk ticket booths, m1, M1">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <east><BWShopsTwo /></east>
+                        <south><BWParkingLotOne /></south>
+                </exits>
+        </BWParkingLotTwo>
+        
+        <BWShopsTwo name="Ye olde shoppes, creepy pac sun, n1, N1">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <west><BWParkingLotTwo /></west>
+                        <south><HauntedHouseGame /></south>
+                </exits>
+        </BWShopsTwo>
+        
+        <HauntedHouseGame name="Ye olde Haunted House, creepy house tho, n2, N2">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><BWShopsTwo /></north>
+                        <south><CarnyGames /></south>
+                </exits>
+        </HauntedHouseGame>
+        
+        <CarnyGames name="Boardwalk carny games, n3, N3">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><HauntedHouseGame /></north>
+                        <south><RollerCoasterControls /></south>
+                </exits>
+        </CarnyGames>
+        
+        <RollerCoasterControls name="Carnival rides control box, n4, N4">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <west><RollerCoaster /></west>
+                        <east><BWEntrance /></east>
+                        <south><FerrisWheel /></south>
+                        <north><CarnyGames /></north>
+                </exits>
+        </RollerCoasterControls>
+        
+        <RollerCoaster name="Rollercoaster wreckage, m4, M4">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <east><RollerCoasterControls /></east>
+                        <west>You can see the hospital grounds through the fence. It seems like its been days since you woke up.</west>
+                </exits>
+        </RollerCoaster>
+        
+        <FerrisWheel name="The save-Ferris Wheel, n5, N5">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><RollerCoasterControls /></north>
+                </exits>
+        </FerrisWheel>
+        
+        <BWEntrance name="Beach side boardwalk entrance, o4, O4">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><BWOne /></north>
+                        <south><ClownRoom /></south> <!--SHOULD BE LOCKED AND SHIT-->
+                        <west><RollerCoasterControls /></west>
+                        <east>The ocean is lapping gently at the shore. You're hit with a pang of sadness. The world used to be so simple. Better keep moving</east>
+                </exits>
+        </BWEntrance>
+        
+        <BWOne name="Beach side boardwalk, o3, O3">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><BWTwo /></north>
+                        <south><BWEntrance /></south>
+                        <east>The ocean is lapping gently at the shore. You're hit with a pang of sadness. The world used to be so simple. Better keep moving</east>
+                </exits>
+        </BWOne>
+        
+        <BWTwo name="Boardwalk bathrooms, o2, O2">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><BWElectricBox /></north>
+                        <south><BWOne /></south>
+                        <east>The ocean is lapping gently at the shore. You're hit with a pang of sadness. The world used to be so simple. Better keep moving</east>
+                </exits>
+        </BWTwo>
+        
+        <BWElectricBox name="Boardwalk electric panel, o1, O1">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <south><BWTwo /></south>
+                        <east>The ocean is lapping gently at the shore. You're hit with a pang of sadness. The world used to be so simple. Better keep moving</east>
+                </exits>
+        </BWElectricBox>
+        
+        <ClownRoom name= "The carnival supply room, the clown room, o5, O5">
+                <ldesc>TBD
+                
+                </ldesc>
+                <exits>
+                        <north><BWEntrance /></north>
+                        <east>Through the cracked, dusty window you can see a huge oil rig offshore. The vessel has lights on. Maybe someone survived after all.</east>
+                </exits>
+        </ClownRoom>
+        
+                        
+<!--SwampOne in MainStreet############################# Forest/Graveyard/Swamp Classes ###################-->         
+<!-- ############################ 1st Avenue Classes ################################DONE-->
+
+<!--To be completed later  ########################### Alley Classes ######################################-->
+
 <!--########################### Zoo Classes ########################################-->
+<!--############################# Hills/ Lake/ Cabin Classes #######################-->
 <!--################################## Mansion/Houses Classes ######################-->
 <!--###############################Elementary School Classes #######################-->
-<!--############################# Forest/Graveyard/Swamp Classes ###################--> 
-<!--############################# Hills/ Lake/ Cabin Classes #######################-->
 <!--############################# Construction Site/ Field Classes #################-->  
 <!--Brandon's Rooms-->
 <!--Steve's Rooms-->
