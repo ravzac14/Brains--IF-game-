@@ -5,6 +5,9 @@ import sys
 from pyf import items, game, interface, props
 
 
+#self.addEventListener('evtStateWorn', (self, "You can't wear the cape.", capeWorn))
+#This will call capeWorn with the arguments self and "You can't wear the cape." every time evtStateWorn is fired.
+
 ##################################### Playable Character #######################
 class rickGame(game.Game):
     pass
@@ -483,6 +486,9 @@ class DocKey(items.Item):
     pass
 
 class DocCabinet(items.Item):
+    pass
+    
+class erZombieContainer(items.Item):
     pass
 
 class HosGown(items.Item):
